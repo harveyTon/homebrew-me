@@ -1,8 +1,8 @@
 class Me < Formula
   desc "A modern, context-aware replacement for whoami"
   homepage "https://github.com/harveyTon/me"
-  url "https://github.com/harveyTon/me/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "3548b23e43655f98b5e5d42ba6e9285c9cd5048cd2bab7e36f6cdb13d870c007"
+  url "https://github.com/harveyTon/me/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "6563dc4874d9d3fc3b3bed6d739e1e6ca903b1c394e9b2d305f890385aa4441b"
   license "MIT"
 
   depends_on "rust" => :build
