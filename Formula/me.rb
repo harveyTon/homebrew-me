@@ -1,20 +1,20 @@
 class Me < Formula
   desc "A modern, context-aware replacement for whoami"
   homepage "https://github.com/harveyTon/me"
-  url "https://github.com/harveyTon/me/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "65d3646ae4bfb5b850a2e7b5984fdd7b3aa91cbb1f22b80240159266b0e0945d"
+  url "https://github.com/harveyTon/me/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "f3be562a82117d2d95ef4d82436659597ae70b6634622ae54b69084cc643cedb"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
       resource "me-binary" do
-        url "https://github.com/harveyTon/me/releases/download/v0.4.0/me-v0.4.0-macos-arm64.tar.gz"
-        sha256 "3ee177e68c7b949f848d3adc8322fcc3c294bd856c7a4e1fd9c0ac88f1686166"
+        url "https://github.com/harveyTon/me/releases/download/v0.4.1/me-v0.4.1-macos-arm64.tar.gz"
+        sha256 "f15030fa10b614e22cd209f56756cd0d18b55ff9e40680cc1704748fb904e12e"
       end
     elsif Hardware::CPU.intel?
       resource "me-binary" do
-        url "https://github.com/harveyTon/me/releases/download/v0.4.0/me-v0.4.0-macos-x64.tar.gz"
-        sha256 "5b8dd0f9d08ad81e3727540ddf362472f5707cdb809fbe86b75861af08a67b6b"
+        url "https://github.com/harveyTon/me/releases/download/v0.4.1/me-v0.4.1-macos-x64.tar.gz"
+        sha256 "f72b4f703e3a2e00e8414d50b2a1805483632748c6303b7b5c5eec638f7661e7"
       end
     else
       depends_on "rust" => :build
@@ -22,13 +22,13 @@ class Me < Formula
   elsif OS.linux?
     if Hardware::CPU.arm?
       resource "me-binary" do
-        url "https://github.com/harveyTon/me/releases/download/v0.4.0/me-v0.4.0-linux-arm64.tar.gz"
-        sha256 "c272d31337b6e026fa9e393dd5986cef8b989ae16bd4aab16431fcb065631311"
+        url "https://github.com/harveyTon/me/releases/download/v0.4.1/me-v0.4.1-linux-arm64.tar.gz"
+        sha256 "f4e8851da29990710ba1b6f5370ccc63100e427b6d6afe3972966e03ce735765"
       end
     elsif Hardware::CPU.intel?
       resource "me-binary" do
-        url "https://github.com/harveyTon/me/releases/download/v0.4.0/me-v0.4.0-linux-x64.tar.gz"
-        sha256 "e5b499c28db6b2c1b012c97c779c00b4263bd9cf2d4a6667d6e28fab2b10fe67"
+        url "https://github.com/harveyTon/me/releases/download/v0.4.1/me-v0.4.1-linux-x64.tar.gz"
+        sha256 "a2345fa32af7b8b03021338443c156ef0fb078a50aafc0209107ce22b2f142f5"
       end
     else
       depends_on "rust" => :build
